@@ -2,6 +2,9 @@
     color: rgb(218, 83, 83);
 }
 */
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+
 img{
     width: 250px;
 } 
@@ -17,6 +20,25 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
+
+.weatherIcon{
+    flex: 1 100%;
+    height: 60%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /*border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;*/
+    background: #FAFAFA;
+    font-family: weathericons;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 100px;
+}  
+.weatherIcon i{
+  padding-top: 30px;
+}
+
 
 .main-content{
     flex-grow: 1;

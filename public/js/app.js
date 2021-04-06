@@ -18,6 +18,12 @@ weatherForm.addEventListener('submit',(e)=>{
         if(data.error){
             messageOne.textContent=data.error;
         }else{
+           /* if(data.weather_descriptions === 'rain' || data.weather_descriptions === 'fog'){
+                weatherIcon.className = "wi wi-day-"+data.weather_descriptions;
+            }else{
+                weatherIcon.className = "wi wi-day-cloudy";
+            }*/
+            //console.log(data.current.weather_descriptions[0]);
             messageOne.textContent = data.location
             messageTwo.textContent = data.forcast
         }
